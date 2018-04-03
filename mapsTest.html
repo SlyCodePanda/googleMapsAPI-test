@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps Test</title>
+	<meta charset="utf-8">
+	
+	<!-- js and css links -->
+	<script src="mapsTest.js"></script> 
+	<link rel="stylesheet" type="text/css" href="mapsTest.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+</head>
+<body>
+	<!-- map -->
+	<div id="map"></div>
+	<!-- search box -->
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+	<h1>Google Maps Demo</h1>
+	<p>
+		Using the Google Maps API.
+	</p>
+
+	<p>
+		Change map style:
+		<!-- Buttons -->
+		<button onclick="nightMode()">Night Mode</button>
+		<button onclick="reset()">Day Mode</button>
+	</p>
+	
+
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxHJ7xSc9KKiZqZcjth2Z8OmNvY3ioWBk&callback=myMapFunction&libraries=places">
+	</script>
+</body>
+</html>
